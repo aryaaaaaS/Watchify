@@ -1,0 +1,337 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #ff4081;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff4081;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.shop-btn,
+.discover-btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.shop-btn:hover,
+.discover-btn:hover {
+    background-color: #222;
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Brands Section */
+.brands {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.brands h2 {
+    margin-bottom: 30px;
+    font-size: 38px;
+    color: #333;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.brand-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.brand-card {
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.brand-card:hover {
+    transform: rotate(-2deg) scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.brand-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.brand-card h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Shop Section */
+.shop {
+    background-color: #f9f9fc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shop h2 {
+    margin-bottom: 40px;
+    font-size: 38px;
+    color: #333;
+}
+
+.watch-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.watch {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.watch:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.watch img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.watch:hover img {
+    transform: rotate(-5deg);
+}
+
+.watch h3 {
+    font-size: 22px;
+    color: #ff4081;
+}
+
+.watch p {
+    font-size: 20px;
+    color: #333;
+}
+
+.buy-btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background-color: #222;
+    transform: scale(1.1);
+}
+
+/* Official Websites Section */
+.websites {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.websites h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.websites p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.official-links {
+    list-style-type: none;
+}
+
+.official-links li {
+    margin-bottom: 10px;
+}
+
+.official-links a {
+    color: #ff4081;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.official-links a:hover {
+    color: #222;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #222;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
